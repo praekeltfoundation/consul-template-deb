@@ -44,7 +44,7 @@ mkdir -p $PACKAGE_DIR$BIN_DIR
 # Move the binary in to place
 mv ./$PROJECT $PACKAGE_DIR$BIN_DIR
 # Copy the package files
-cp -r "$(pwd)/$REPO/package/*" $PACKAGE_DIR
+cp -r $(pwd)/$REPO/package/* $PACKAGE_DIR
 
 # Create misc empty directories
 for path in $EMPTY_DIRS; do

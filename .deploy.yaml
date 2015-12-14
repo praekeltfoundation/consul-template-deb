@@ -1,0 +1,3 @@
+name: consul-template
+version: 0.12.0
+buildscript: build.sh

@@ -1,0 +1,9 @@
+# Consul Template Upstart configuration file
+
+# Customize location of Consul Template binary (especially for development testing).
+#CONSUL_TEMPLATE="/usr/local/bin/consul-template"
+
+# Use CONSUL_TEMPLATE_OPTS to modify the agent startup options.
+CONSUL_TEMPLATE_OPTS=" \
+    -pid-file=/var/run/consul-template.pid \
+    -config=/etc/consul-template/conf.d"
